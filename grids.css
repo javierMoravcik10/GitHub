@@ -1,0 +1,1016 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#cuotas {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 20px;
+}
+
+h1 {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+h1:hover {
+    text-decoration: underline;
+    color: red;
+    transition: 0.2s;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+.contenedorInicio {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4);
+
+    grid-template-areas: "cabecera cabecera"
+                         "inicio inicio"
+                         "seleccion seleccion"
+                         "footer1 footer1";
+}
+
+.cabecera {
+    grid-area: cabecera;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
+    align-items: center;
+    background-color: white;
+}
+
+.boxMenu {
+    background-color: white;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.menu > li {
+    display: inline-block;
+}
+
+.menu > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin-top: -10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#search {
+    width: 90px;
+    padding: 10px;
+}
+
+.menu li a:hover {
+    color: red;
+    transition: all .3s;
+    text-decoration: underline;
+    border-top: solid red;
+}
+
+.subMenu {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    display: none;
+    font-size: 15px;
+}
+
+.subMenu li a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.menu li:hover .subMenu{
+    display: block;
+}
+
+.subMenu li a:hover {
+    text-decoration: none;
+    border-radius: 10px;
+    border-top: none;
+    background-color:rgb(36, 35, 35);
+}
+
+.inicio {
+    grid-area: inicio;
+    height: 620px;
+    background-image: url(../GitHub/imagenes/calco1.jpg);
+}
+
+.coleccion {
+    height: 150px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.384);
+    position: absolute;
+    margin-top: 230px;
+    margin-left: 40px;
+    border-radius: 5px;
+    border: solid 2px;
+}
+
+.h2 {
+    color: rgb(212, 149, 32);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.seleccion {
+    grid-area: seleccion;
+    background-image: url(../GitHub/imagenes/Green-leaves-texture-wood-board-background_3840x1200.jpg);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    height: 900px;
+    background-color: rgb(24, 24, 24);
+    background-attachment: fixed;
+}
+
+.bordeImagen:hover {
+    border: dashed 2px white;
+}
+
+.seleccionFotos, .seleccionFotos2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+
+.contenedorHombre2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4);
+
+    grid-template-areas:    "cabecera cabecera"
+                            "presentacionCatalogoHombre presentacionCatalogoHombre"
+                            "CatalogoHombre2 CatalogoHombre2"
+                            "footer1 footer1";
+}
+
+.presentacionCatalogoHombre {
+    grid-area: presentacionCatalogoHombre;
+    display: flex;
+    justify-content: space-around; 
+    background-color: black;
+    margin-top: 40px;
+      
+}
+
+
+.ubicacionHombre {
+    height: 300px;
+    width: 900px;
+}
+
+.h3Productos, .h3Categorias, .h3RangoDePrecios {
+    font-size: 30px;
+    color:   white;
+    letter-spacing: 2px;
+}
+
+.h3Categorias {
+    margin-top: 115px;
+    margin-left: 20px;
+}
+
+.hrBarraCatalogo {
+    margin-left: 20px;
+    width: 300px;
+    height: 5px;
+    background-color: white;
+}
+
+.listaCatalogo {
+    list-style: none;
+    margin-top: 50px;
+}
+
+.listaCatalogo li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    line-height: 35px;
+    margin-left: 15px;
+}
+
+.folder {
+    width: 30px;
+    height: 30px;
+}
+
+
+.listaCatalogo li a:hover{
+    color: rgb(139, 3, 3);
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+
+.CatalogoHombre2 {
+    grid-area: CatalogoHombre2;
+    display: flex;
+    height: 1100px;
+    justify-content: space-around;
+    border-bottom: 2px solid white;
+}
+
+
+.fotoCatalogoHombre {
+    height: 200px;
+    margin-top: 120px;
+    margin-right: 45px;
+}
+
+.pCHLista2 > .listaCatalogo {
+    margin-left: 15px;
+
+}
+
+.contenedorMujer2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4);
+
+
+    grid-template-areas: "cabecera cabecera"
+                         "presentacionCatalogoMujer presentacionCatalogoMujer"  
+                         "CatalogoMujer2 CatalogoMujer2"
+                         "footer1 footer1";
+}
+
+.presentacionCatalogoMujer {
+    grid-area: presentacionCatalogoMujer;
+    display: flex;
+    justify-content: space-around; 
+    background-color: black;
+    margin-top: 40px;
+      
+}
+
+
+.ubicacionMujer {
+    height: 300px;
+    width: 900px;
+}
+
+.h3Productos, .h3Categorias, .h3RangoDePrecios {
+    font-size: 30px;
+    color:   white;
+    letter-spacing: 2px;
+}
+
+.h3Categorias {
+    margin-top: 115px;
+    margin-left: 20px;
+}
+
+.hrBarraCatalogo {
+    margin-left: 20px;
+    width: 300px;
+    height: 5px;
+    background-color: white;
+}
+
+.listaCatalogo {
+    list-style: none;
+    margin-top: 50px;
+}
+
+.listaCatalogo li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    line-height: 35px;
+    margin-left: 15px;
+}
+
+.folder {
+    width: 30px;
+    height: 30px;
+}
+
+
+.listaCatalogo li a:hover{
+    color: rgb(139, 3, 3);
+    text-decoration: underline;
+    transition: all .3s;
+}
+
+
+.CatalogoMujer2 {
+    grid-area: CatalogoMujer2;
+    display: flex;
+    height: 1100px;
+    justify-content: space-around;
+    border-bottom: 2px solid white;
+}
+
+
+.fotoCatalogoMujer {
+    height: 200px;
+    margin-top: 120px;
+    margin-right: 45px;
+}
+
+.pCHLista2 > .listaCatalogo {
+    margin-left: 15px;
+
+}
+
+
+
+
+.contenedorNosotros2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4);
+
+    grid-template-areas: "cabecera cabecera"
+                         "bannerNosotros bannerNosotros"
+                         "descripcionNosotros descripcionNosotros"
+                         "footer1 footer1";
+}
+
+.bannerNosotros {
+        grid-area: bannerNosotros;
+        height: 670px;
+        background-image: url(../GitHub/imagenes/skate-shorts-banner-min.jpg);
+        display: flex;
+        justify-content: center;
+        background-position-x: -130px ;
+        
+    }
+
+.descripcionNosotros {
+        grid-area: descripcionNosotros;
+}
+
+.descripcionNosotros {
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-image: url(../GitHub/imagenes/empresa-bg\ \(1\).jpg);
+}
+
+.descripcionNosotrosTitulo {
+        height: 45px;
+        width: 1100px;
+        background-color: beige;
+        color: black;
+        margin-top: -25px;
+        margin-left: 120px;
+        font-size: 35px;    
+}
+
+.descripcionNosotrosParrafo {
+    color: white;
+    width: 1000px;
+    text-align: center;
+    margin-left: 180px;
+    margin-top: 50px;
+    line-height: 20px;
+}
+
+
+.footer1 {
+    grid-area: footer1;
+    background-color: black;
+    height: 500px; 
+    width: 1349px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.caja1, .caja2, .caja3, .caja4 {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.tituloNav {
+    text-align: center;
+    font-size: 17px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+    margin-top: 40px;
+}
+
+.logoFooter {
+    margin-top: 40px;
+}
+
+.refNav {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.suscribirse, .enviar {
+    padding: 15px;
+    text-align: center;
+}
+
+.suscribirse:hover, .enviar:hover {
+    color: white;
+    background-color: rgb(100, 0, 0);
+    border-radius: 5px;
+    border: solid 1px white;
+}
+
+.enviar {
+    width: 125px;
+}
+
+
+
+.tituloCopyright {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 20px;
+    margin-top: 190px;
+
+}
+
+.parrafoCopyright {
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.about {
+    margin-top: 140px;
+}
+
+
+
+
+
+.contenedorContacto2 {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4);
+
+    grid-template-areas: "cabecera cabecera"
+                         "datosContacto datosContacto"
+                         "formulario formmulario"
+                         "footer1 footer1";
+}
+
+.datosContacto {
+    grid-area: datosContacto;
+}
+
+.bannerContacto {
+    height: 270px;
+    background-image: url(../GitHub/imagenes/bannercontacto.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    margin-top: -2px;
+}
+
+.tituloBannerContacto {
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    margin-top: 90px;
+    letter-spacing: 3px;
+}
+
+.textoContacto {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.formulario {
+    grid-area: formulario; 
+    display: flex;
+    justify-content: space-around;
+    height: 750px;
+    background-color: black;
+    color: white;
+    
+}
+
+.hrBarra {
+    width: 300px;
+    height: 5px;
+    background-color: white;
+}
+
+.formularioStaff {
+    width: 500px;
+    margin-top: 40px;
+    border-right: dotted 1px white;
+}
+
+.formu {
+    margin-top: 40px;
+    margin-left: -20px;
+}
+
+.inputFormu {
+    height: 30px;
+    width: 700px;
+}
+
+.textarea {
+    width: 700px;
+    height: 200px;
+}
+
+.btnFormu {
+    padding: 15px;
+
+}
+
+.btnFormu:hover {
+    background-color: rgb(114, 23, 23);
+    color: white;
+    border: solid 1px white;
+}
+
+
+
+
+
+/*  MEDIA QUERI HTML CONTACTOS2 - CON GRIDS */
+
+@media screen and (max-width: 776px) {
+    .contenedorContacto2 {
+        display: grid;
+        grid-template-columns: 100%;
+
+        grid-template-areas: "cabecera"
+                             "datosContacto"
+                             "formulario"
+                             "footer1";
+    }
+
+    .cabecera {
+        grid-area: cabecera;
+        display: flex;
+        flex-direction: column;   
+    }
+    
+    .boxLogo, .log {
+        height: 60px;
+    }
+
+    .boxMenu {
+        height: 130px;
+        text-align: center;
+    }
+
+    .menu li  {
+        margin: -12px;
+        margin-top: 7px;
+    }
+
+    .menu li a:hover {
+        border-top: none;
+    }
+
+    .bannerContacto {
+        background-image: url(../GitHub/imagenes/bannercontacto.jpg);
+        background-position: -270px;
+    }
+
+    .formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .formulario {
+        height: 900px;
+    }
+
+    .formularioStaff {
+        margin-top:  0px;
+        text-align: center;
+    }
+    
+    .hrBarra {
+        margin-left: 100px;
+    }
+
+    .formu {
+        text-align: center;
+    }
+
+    .inputFormu, .textarea {
+        width: 400px;
+    }
+
+    .textarea {
+        height: 50px;
+    }
+
+    .footer1 {
+        grid-area: footer1;
+        display: flex;
+        flex-direction: column;
+        height: 1500px;
+        width: auto;
+        align-items: center;
+    }
+
+    .dos {
+        margin-top: -20px;
+    }
+
+    .caja1 {
+        height: 200px;
+        margin-top: -40px;
+    }
+
+    .tituloCopyright {
+        margin-top: -5px;
+    }
+
+    .caja2 {
+        margin-top: -100px;
+    }
+
+    .caja3 {
+        margin-top: -100px;
+    }
+
+    .caja4 {
+        margin-top: -200px;
+    }
+
+}
+
+
+
+
+
+/*  DEJO COMENTADO ESTA MISMA MEDIA QUERI HTML CONTACTOS2 - PERO SIN GRID, MAS BIEN CON FLEX.
+QUISE PROBAR DE LAS DOS MANERAS. */
+
+
+
+/* @media screen and (max-width: 776px) {
+    .cabecera, .formulario, .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .boxLogo, .log {
+        height: 60px;
+    }
+
+    .boxMenu {
+        height: 130px;
+        text-align: center;
+    }
+
+    .menu li  {
+        margin: -5px;
+        margin-top: 7px;
+    }
+
+    .menu li a:hover {
+        border-top: none;
+    }
+
+
+    .bannerContacto {
+        background-image: url(../Entr.3grids/imagenes/bannercontacto.jpg);
+        background-position: -270px;
+    }
+
+    .formulario {
+        height: 900px;
+    }
+
+    .formularioStaff {
+        margin-top:  0px;
+        text-align: center;
+    }
+    
+    .hrBarra {
+        margin-left: 100px;
+    }
+
+    .formu {
+        text-align: center;
+    }
+
+    .inputFormu, .textarea {
+        width: 400px;
+    }
+
+    .textarea {
+        height: 50px;
+    }
+
+    .navFooter {
+        text-align: center;
+    }
+
+    .navFooter2 {
+        display: none;
+    }
+
+} */
+
+
+
+
+     /* MEDIA QUERI HTML INICIO */
+
+
+@media screen and (max-width: 776px) {
+
+    .contenedorInicio {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4);
+        grid-template-areas: "cabecera"
+                             "inicio"
+                             "seleccion"
+                             "footer1";
+    }
+
+
+    .inicio {
+        grid-area: inicio;
+        background-image: url(../GitHub/imagenes/calco1.jpg);
+        background-position: -220px;       
+    }
+
+    .coleccion {
+        display: none;
+    }
+
+    .seleccion {
+        grid-area: seleccion;
+        background-image: url(../GitHub/imagenes/Green-leaves-texture-wood-board-background_3840x1200.jpg);
+        height: 2550px;
+        background-attachment: fixed;
+    }
+    
+    .seleccionFotos, .seleccionFotos2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .bordeImagen {
+        margin: 20px;
+    }
+
+    .footer1 {
+        grid-area: footer1;
+        display: flex;
+        flex-direction: column;
+        height: 1500px;
+        width: auto;
+        align-items: center;
+    }
+
+    .dos {
+        margin-top: -20px;
+    }
+
+    .caja1 {
+        height: 200px;
+        margin-top: -40px;
+    }
+
+    .tituloCopyright {
+        margin-top: -5px;
+    }
+
+    .caja2 {
+        margin-top: -100px;
+    }
+
+    .caja3 {
+        margin-top: -100px;
+    }
+
+    .caja4 {
+        margin-top: -200px;
+    }
+
+}
+
+
+   /* MEDIA QUERI HTML NOSOTROS2 */
+
+
+   @media screen and (max-width: 776px) {
+        .contenedorNosotros2 {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(4);
+            grid-template-areas: "cabecera"
+                                 "bannerNosotros"
+                                 "descripcionNosotros"
+                                 "footer1";
+            }
+
+            .bannerNosotros {
+                grid-area: bannerNosotros;
+                background-position-x: -660px;    
+            }
+
+            .descripcionNosotros {
+                grid-area: descripcionNosotros;
+                height: 1050px;
+                
+            }
+
+            .dNT2 {
+                font-size: 20px;
+                width: 400px;
+                margin-left: 40px;
+                text-align: center;
+                letter-spacing: 2px;
+            }
+
+            .dNP2 {
+                width: 400px;
+                margin-left: 40px;
+            }
+
+            .footer1 {
+                grid-area: footer1;
+                display: flex;
+                flex-direction: column;
+                height: 1500px;
+                width: auto;
+                align-items: center;
+            }
+        
+            .dos {
+                margin-top: -20px;
+            }
+        
+            .caja1 {
+                height: 200px;
+                margin-top: -40px;
+            }
+        
+            .tituloCopyright {
+                margin-top: -5px;
+            }
+        
+            .caja2 {
+                margin-top: -100px;
+            }
+        
+            .caja3 {
+                margin-top: -100px;
+            }
+        
+            .caja4 {
+                margin-top: -200px;
+            }
+
+   }
+
+
+    /* MEDIA QUERI HTML HOMBRE2 */
+
+
+@media screen and (max-width: 776px) {
+
+
+     .contenedorHombre2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4);
+
+    grid-template-areas:    "cabecera"
+                            "presentacionCatalogoHombre"
+                            "CatalogoHombre2"
+                            "footer1";
+    }
+
+    .presentacionCatalogoHombre {
+        grid-area: presentacionCatalogoHombre;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pCHLista {
+        margin-left: 150px;
+    }
+
+    .hrBarra {
+        margin-left: -50px;
+    }
+
+    .pCHBanner {
+        overflow: hidden
+       
+    }
+
+    .ubicacionHombre {
+        width: 900px;
+        height: 300px;
+        margin-left: -20px;
+    }
+
+    .CatalogoHombre2 {
+        grid-area: CatalogoHombre2;
+        display: flex;
+        flex-direction: column;
+        height: 2000px;
+        align-items: center;
+    }
+
+    .listaCatalogo2, .h3Categorias, .hrBarraCatalogo {
+        display: none;
+    }
+
+    .fotoCatalogo {
+        margin-top: 300px;
+        margin-bottom: 500px;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 776px) {
+
+
+    .contenedorMujer2 {
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: repeat(4);
+
+   grid-template-areas:    "cabecera"
+                           "presentacionCatalogoMujer"
+                           "CatalogoMujer2"
+                           "footer1";
+   }
+
+   .presentacionCatalogoMujer {
+       grid-area: presentacionCatalogoMujer;
+       display: flex;
+       flex-direction: column;
+   }
+
+   .pCHLista {
+       margin-left: 150px;
+   }
+
+   .ubicacionMujer {
+    width: 900px;
+    height: 300px;
+    margin-left: -20px;
+}
+
+.CatalogoMujer2 {
+    grid-area: CatalogoMujer2;
+    display: flex;
+    flex-direction: column;
+    height: 2000px;
+    align-items: center;
+}
+
+.pCHLista2 {
+    display: none;
+}
+
+}
