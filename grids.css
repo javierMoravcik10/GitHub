@@ -1014,3 +1014,18 @@ QUISE PROBAR DE LAS DOS MANERAS. */
 }
 
 }
+
+               /* Efectos varios para la Web */ 
+ 
+
+.efectos:hover {
+    filter: drop-shadow(7px 7px 10px rgb(91, 155, 32));
+    transition: all 0.5s;
+    transform: scale(0.9);
+}
+
+
+
+
+
+
