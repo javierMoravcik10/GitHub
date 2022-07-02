@@ -417,10 +417,11 @@ body {
 
 .tituloNav {
     text-align: center;
-    font-size: 17px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-family: sans-serif;
     letter-spacing: 3px;
     margin-top: 40px;
+    font-weight: bold;
 }
 
 .logoFooter {
@@ -586,6 +587,12 @@ body {
     
     .boxLogo, .log {
         height: 60px;
+    }
+
+    .log:hover {
+        transition: all 0.5s;
+    transform: scale(1.2);
+    overflow: hidden;
     }
 
     .boxMenu {
@@ -772,8 +779,23 @@ QUISE PROBAR DE LAS DOS MANERAS. */
         background-position: -220px;       
     }
 
-    .coleccion {
+    /* .coleccion {
         display: none;
+    } */
+
+    .hh2 {
+        display: none;
+    }
+
+    .coleccion {
+        height: 100px;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.384);
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 15px;
+        border-radius: 5px;
+        border: solid 2px;
     }
 
     .seleccion {
@@ -782,7 +804,11 @@ QUISE PROBAR DE LAS DOS MANERAS. */
         height: 2550px;
         background-attachment: fixed;
     }
-    
+
+    .efectos2 {
+        filter: opacity(70%);
+    }
+
     .seleccionFotos, .seleccionFotos2 {
         display: flex;
         flex-direction: column;
@@ -1024,8 +1050,55 @@ QUISE PROBAR DE LAS DOS MANERAS. */
     transform: scale(0.9);
 }
 
+.efectos {
+    filter: opacity(70%);
+
+}
+
+.coleccion {
+    background-image: linear-gradient(black, transparent);
+    /* transform: rotate(-4deg);
+    transform: skewY(-5deg); */
+}
+
+/* .coleccion:hover {
+    background-image: linear-gradient(black, transparent);
+    transform: rotate(-4deg);
+    transform: skewY(5deg);
+} */
+
+.suscribirse:focus, .enviar:focus {
+    background-color: red;
+}
+
+.suscribirse:hover, .enviar:hover {
+    width: 150px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.logoFooter {
+    filter: drop-shadow(7px 7px 10px rgb(91, 155, 32));
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.logoFooter:hover {
+    transition: all 0.5s;
+    transform: scale(1.2);
+    overflow: hidden;
+}
 
 
+/*  
+   Efectos agregados en los MEDIA QUERI 
 
+.efectos2 {
+        filter: opacity(70%);
+    } 
 
-
+      .log:hover {
+        transition: all 0.5s;
+    transform: scale(1.2);
+    overflow: hidden;
+    }    */
